@@ -391,7 +391,7 @@ nav ul li {
 
 /*Female Look Full Story*/
 
-.fullinfo {
+.fullpicture {
 	background: url('../images/bluecoat.jpg') no-repeat;
 	background-size: cover;
 	height: 700px;
@@ -401,13 +401,29 @@ nav ul li {
 	width: 80%;
 }
 
-.infocontainer {
-	height: 400px;
+.fullinfo {
+	height: 500px;
 	margin: 0 auto;
-	padding: 20px;
 	position: relative;
 	top: 80px;
+	width: 80%;
+}
+
+.infocontainer {
+	float: left;
+	height: 400px;
+	padding: 10px;
+	position: relative;
 	width: 70%
+}
+
+.outfitstats {
+	float: left;
+	margin-left: 45px;
+	padding: 15px;
+	position: relative;
+	text-align: right;
+	width: 20%
 }
 
 /*Submit Page*/
