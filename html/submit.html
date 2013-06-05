@@ -10,13 +10,23 @@
         <a href="index.html"><h1>Parallel 42</h1></a>
         <nav>
             <ul>
-                <li><a href="submit.html" class="navbutton">Submit a look</a></li>
-                <li><a href="main.html" class="navbutton">Browse</a></li>
+                <li><a href="submit.html" class="navbutton">Share a look</a></li>
+                <li><a href="submit.html" class="navbutton">Join to share</a></li>
+                <li><a href="main.html" class="navbutton">Explore</a></li>
             </ul>
         </nav>
     </header>
     <section class="submitguidelines">
-        <p>Rules blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah.</p>
+        <h3>What inspires you?</h3>
+            <p> We want to know! Please share a look you admire using the following form.</p>
+            <p>Will your style inspiration make the cut? If your post has been approved, you will be notified by email within 24 hours.</p>
+        <h3>Submission Requirements</h3>
+            <ol>
+                <li>Looks should be from fashion blogs, the runway, or magazine editorials.</li>
+                <li>The better the quality, the better chance of making the cut. Please take care to submit larger images. Images must be at least 500px wide.</li>
+                <li>Image files must be in .jpg or .png format.</li>
+                <li>Give credit to your source.</li>
+            </ol>
     </section>
     <section class="form">
     <form action="#" method="blahblah" class="submitform">
@@ -27,9 +37,11 @@
         </fieldset>
         <label for="website">Website/Blog URL</label>
             <input type="url" name="website" id="website">
-        <label for="file">Submit a look</label>
+        <label for="file">Share a look</label>
             <input type="file" name="file" id="file" required>
         <label for="submissiontitle">Title of Image</label>    
+            <input type="text" name="submissiontitle" id="submissiontitle" required>
+        <label for="submissiontitle">Image Source</label>
             <input type="text" name="submissiontitle" id="submissiontitle" required>
         <label for="stylecategory">Category</label>
             <select name="stylecategory" id="stylecategory">
@@ -48,17 +60,17 @@
             </select>
         <label for="message">What does this look mean to you?</label>
             <textarea name="message" id="message" required>Tell us why you are submitting this look.</textarea>
-        <input type="submit" name="submit" id="submit" value="Submit">
+        <input type="submit" name="submit" id="submit" value="Share">
     </form>
     </section>
 
         <footer>
         <ul>
-            <li><a href="#">About</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="#">[Facebook Twitter Pinterest]</a></li> 
             <li><a href="#">Help</a></li>
-            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="terms.html">Terms & Conditions</a></li>
         </ul>
     </footer>
 

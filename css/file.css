@@ -52,25 +52,34 @@ table {
 
 /* Custom Styles */
 
-
 body {
-	background-color: #ffffff;
+	background-color: #fff;
+}
+
+body, p, a {
+	color: #000;
 	font-family: helvetica, arial, sans-serif;
 	font-size: 100%;
 }
 
-h2 {
+p {
+	line-height: 1.5em;
+}
+
+h2, h3 {
 	font-family: vevey, helvetica, arial, sans-serif;
-	font-size: 1.7em;
-	letter-spacing: 3px;
 	margin: 0 auto;
 	padding: 10px 0;
 }
 
-p {
-	font-family: helvetica, arial, sans-serif;
-	font-size: 1em;
-	line-height: 1.5em;
+h2 {
+	font-size: 1.7em;
+	letter-spacing: 3px;
+}
+
+h3 {
+	font-size: 1.4em;
+	letter-spacing: 1px;
 }
 
 a {
@@ -79,11 +88,7 @@ a {
 	text-decoration: none;
 }
 
-a:hover {
-	cursor: pointer;
-}
-
-a:active {
+a:hover, a:active {
 	cursor: pointer;
 }
 
@@ -93,7 +98,6 @@ ul {
 
 ul li {
 	font-family: helvetica, arial, sans-serif;
-	line-height: 2em;
 }
 
 
@@ -122,6 +126,8 @@ header {
 	z-index: 1000;
 }
 
+/*Logo*/
+
 h1 {
 	color: #000000;
 	float: left;
@@ -134,12 +140,14 @@ h1 {
 	text-transform: uppercase;
 }
 
+/*Main Navigation*/
+
 nav {
 	float: right;
 	padding: 1px 0 0 0;
 	position: relative;
 	top: 15px;
-	width: 270px;
+	width: 400px;
 	vertical-align: text-bottom;
 }
 
@@ -261,7 +269,7 @@ nav ul li {
 	letter-spacing: 0px;
 	position: relative;
 	text-align: center;
-	top: 20px;
+	top: -60px;
 }
 
 /*buttons*/
@@ -273,10 +281,11 @@ nav ul li {
 	color: black;
 	display: block;
 	font-family: vevey, helvetica, arial, sans-serif;
-	margin: 4px auto;
+	margin: 12px auto;
 	padding: 6px 4px 1px 4px;
 	position: relative;
-	top: 25px;
+	text-align: center;
+	top: -55px;
 	font-size: 1.4em;
 	text-decoration: none;
 	width: 130px;
@@ -288,7 +297,7 @@ nav ul li {
 	display: block;
 	font-family: vevey;
 	font-size: 1.4em;
-	margin: 4px auto;
+	margin: 12px auto;
 	width: 130px;
 }
 
@@ -297,7 +306,7 @@ nav ul li {
 	cursor: pointer;
 	position: relative;
 	text-shadow: 2px 2px #666666;
-	top: 26px;
+	top: -54px;
 }
 
 /*site summary/description*/
@@ -414,23 +423,53 @@ nav ul li {
 	height: 400px;
 	padding: 10px;
 	position: relative;
-	width: 70%
+	width: 60%
+}
+
+/*Outfit Stats Pentagon*/
+
+.outfitpentagon {
+   border-bottom: 150px solid #ffff00;
+   border-left: 75px solid transparent;
+   border-right: 75px solid transparent;
+   height: 0; 
+   margin: 0 auto;
+   opacity:0.7;
+   position: relative;
+   left: 33%;
+   text-align: center;
+   top: 30px;
+   width: 150px;
+}
+
+.outfittriangle {
+   border-top: 75px solid #ffff00;
+   border-left: 150px solid transparent; 
+   border-right: 150px solid transparent; 
+   height: 0;
+   margin: 0 auto;
+   opacity:0.7;
+   position: relative;
+   left: 33%;
+   top: 30px;
+   width: 0; 
+
 }
 
 .outfitstats {
 	float: left;
+	left: 40px;
 	margin-left: 45px;
 	padding: 15px;
 	position: relative;
-	text-align: right;
+	text-align: center;
+	top: -180px;
 	width: 20%
 }
 
 /*Submit Page*/
 
 .submitguidelines {
-	font-family: helvetica, arial, sans-serif;
-	font-size: 1.2em;
 	margin: 0 auto;
 	position: relative;
 	top: 100px;
@@ -538,12 +577,14 @@ footer ul li {
 }
 
 footer a {
-	font-family: helvetica, arial, sans-serif;
-	color: blue;
+	font-family: vevey, helvetica, arial, sans-serif;
+	font-size: 1.1em;
+	letter-spacing: 1px;
+	color: black;
 	text-decoration: none;
 }
 
-footer a:hover {
-	color: orange;
-	font-family: helvetica, arial, sans-serif;
+footer a:active {
+	color: #ffff00;
+	text-shadow: 2px 2px #666666;
 }
