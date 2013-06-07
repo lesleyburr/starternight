@@ -16,17 +16,11 @@
             </ul>
         </nav>
     </header>
-    <section class="submitguidelines">
+    <div class="submitpage">
+        <section class="submitguidelines">
         <h3>What inspires you?</h3>
-            <p> We want to know! Please share a look you admire using the following form.</p>
-            <p>Will your style inspiration make the cut? If your post has been approved, you will be notified by email within 24 hours.</p>
-        <h3>Submission Requirements</h3>
-            <ol>
-                <li>Looks should be from fashion blogs, the runway, or magazine editorials.</li>
-                <li>The better the quality, the better chance of making the cut. Please take care to submit larger images. Images must be at least 500px wide.</li>
-                <li>Image files must be in .jpg or .png format.</li>
-                <li>Give credit to your source.</li>
-            </ol>
+            <p> Tell us! Will your chosen look make the cut? If your post has been approved, you will be notified by email.</p>
+            
     </section>
     <section class="form">
     <form action="#" method="blahblah" class="submitform">
@@ -35,15 +29,18 @@
         <label for="emailaddress">Email</label>    
             <input type="email" name="emailaddress" id="emailaddress" required>
         </fieldset>
-        <label for="website">Website/Blog URL</label>
+        <label for="website">Personal Website/Blog URL</label>
             <input type="url" name="website" id="website">
         <label for="file">Share a look</label>
+        <p>Images must be at least 500px wide and in .jpg or .png format.</p>
             <input type="file" name="file" id="file" required>
-        <label for="submissiontitle">Title of Image</label>    
+        <label for="submissiontitle">Title of Image</label> 
+        <p>Get creative.</p> 
             <input type="text" name="submissiontitle" id="submissiontitle" required>
         <label for="submissiontitle">Image Source</label>
+        <p>Let us know where you found it!</p>
             <input type="text" name="submissiontitle" id="submissiontitle" required>
-        <label for="stylecategory">Category</label>
+        <fieldset><label for="stylecategory">Category</label>
             <select name="stylecategory" id="stylecategory">
                 <option value="question">Womenswear</option>
                 <option value="comment">Menswear</option>
@@ -58,17 +55,20 @@
                 <option value="comment">Vintage</option>
                 <option value="comment">Minimalist</option>
             </select>
+        </fieldset>
         <label for="message">What does this look mean to you?</label>
-            <textarea name="message" id="message" required>Tell us why you are submitting this look.</textarea>
+            <textarea name="message" id="message" required></textarea>
         <input type="submit" name="submit" id="submit" value="Share">
     </form>
     </section>
-
-        <footer>
+</div>
+   <footer>
         <ul>
             <li><a href="about.html">About</a></li>
             <li><a href="#">Contact</a></li>
-            <li><a href="#">[Facebook Twitter Pinterest]</a></li> 
+            <li class="socialmedia"><a href="https://www.facebook.com/parallelfortytwo"><img src="../images/facebook.png" alt="facebook icon"></a></li> 
+            <li class="socialmedia"><a href="https://twitter.com/parallel42"><img src="../images/twitter.png" alt="twitter icon"></a></li> 
+            <li class="socialmedia"><a href="http://pinterest.com/parallel42/"><img src="../images/pinterest.png" alt="pinterest icon"></a></li> 
             <li><a href="#">Help</a></li>
             <li><a href="terms.html">Terms & Conditions</a></li>
         </ul>
