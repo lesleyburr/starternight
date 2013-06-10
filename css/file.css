@@ -147,7 +147,7 @@ nav {
 	margin-top: 15px;
 	padding: 1px 0 0 0;
 	top: 15px;
-	width: 400px;
+	width: 280px;
 	vertical-align: text-bottom;
 }
 
@@ -209,116 +209,74 @@ nav ul li {
 /*Intro Page*/
 
 .intro {
-	background: url('../images/stripedpants.jpg') no-repeat;
+	background: url('../images/originalstripes.jpg') no-repeat;
 	background-size: cover;
-	height: 550px;
+	height: 610px;
 	position: relative;
 	width: 100%;
 }
 
-/*.intro {
-	background: url('../images/stripedpantscropped.jpg') no-repeat;
-	background-size: cover;
-	height: 410px;
-	position: relative;
-	width: 100%;
-}*/
-
-/*pentagon */
-
-.trapezium {
-   border-bottom: 200px solid #ffff00;
-   border-left: 100px solid transparent;
-   border-right: 100px solid transparent;
-   height: 0; 
-   margin: 0 auto;
-   opacity:0.7;
-   position: relative;
-   text-align: center;
-   top: 300px;
-   width: 200px;
+.chevron {
+  position: relative;
+  text-align: center;
+  top: 500px;
+  padding: 1px;
+  margin-bottom: 6px;
+  height: 250px;
+  width: 100%;
 }
 
-.triangle {
-   border-top: 100px solid #ffff00;
-   border-left: 200px solid transparent; 
-   border-right: 200px solid transparent; 
-   height: 0;
-   margin: 0 auto;
-   opacity:0.7;
-   position: relative;
-   top: 300px;
-   width: 0; 
-
+.chevron:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  background: #ffffff;
+  -webkit-transform: skew(0deg, 16deg);
+  -moz-transform: skew(0deg, 16deg);
+  -ms-transform: skew(0deg, 16deg);
+  -o-transform: skew(0deg, 16deg);
+  transform: skew(0deg, 16deg);
 }
+.chevron:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  background: #ffffff;
+  -webkit-transform: skew(0deg, -16deg);
+  -moz-transform: skew(0deg, -16deg);
+  -ms-transform: skew(0deg, -16deg);
+  -o-transform: skew(0deg, -16deg);
+  transform: skew(0deg, -16deg);
+}​
 
-.downarrow { 
-   border-top: 29px solid black;
-   border-left: 47px solid transparent; 
-   border-right: 47px solid transparent; 
-   height: 0;
-   margin: 0 auto;
-   position: relative;
-   top: 260px;
-   width: 0; 
-}
-
-.tagline {
+/*.tagline {
 	font-family: vevey;
 	font-size: 1.9em;
 	letter-spacing: 0px;
 	position: relative;
 	text-align: center;
 	top: -8px;
-}
-
-/*buttons*/
-
-.button {
-	background-color: #ffffff;
-	border: 2px solid #000000;
-	box-shadow: 2px 2px 2px #000;
-	color: black;
-	display: block;
-	font-family: vevey, helvetica, arial, sans-serif;
-	margin: 12px auto;
-	padding: 6px 4px 1px 4px;
-	position: relative;
-	text-align: center;
-	top: -8px;
-	font-size: 1.4em;
-	text-decoration: none;
-	width: 130px;
-}
-
-.button:hover {
-	color: #000000;
-	cursor: pointer;
-	display: block;
-	font-family: vevey;
-	font-size: 1.4em;
-	margin: 12px auto;
-	width: 130px;
-}
-
-.button:active {
-	color: #ffff00;
-	cursor: pointer;
-	position: relative;
-	text-shadow: 2px 2px #666666;
-	top: -7px;
-}
+}*/
 
 /*site summary/description*/
 
+.site-explanation {
+	margin: 0 auto;
+	width: 100%
+}
+
 .sitedescription {
 	border: 1px solid red;
-	clear: both;
-	float: left;
 	margin: 0 auto;
 	position: relative;
-	top: 90px;
-	width: 100%;
+	text-align: center;
+	width: 70%;
 }
 
 .how {
@@ -328,8 +286,8 @@ nav ul li {
 	height: 500px;
 	margin: 0 auto;
 	position: relative;
-	top: 90px;
-	width: 60%;
+	top: 100px;
+	width: 50%;
 }
 
 .demophoto {
@@ -339,10 +297,21 @@ nav ul li {
     height: auto;
 }
 
+.stylists {
+	border: 1px solid red;
+	clear: both;
+	float: right;
+	height: 500px;
+	margin: 0 auto;
+	position: relative;
+	top: 100px;
+	width: 50%;
+}
+
 .stylingphoto {
 	border: 10px solid #ffff00;
-	float: left;
-	width: 35%
+	float: right;
+	width: 25%;
 	height: auto;
 }
 
@@ -403,22 +372,22 @@ nav ul li {
 
 .infoboxfemale {
 	background-color: #ffffff;
-	height: 110px;
+	height: 150px;
 	opacity:0.8;
 	padding: 10px;
 	position: absolute;
-	right: 15px;
+	right: 0px;
 	top: 260px;
 	width: 200px;
 }
 
 .infoboxmale {
 	background-color: #ffffff;
-	height: 110px;
+	height: 150px;
 	opacity:0.8;
 	padding: 10px;
 	position: absolute;
-	right: 15px;
+	right: 0px;
 	top: 260px;
 	width: 200px;
 }
@@ -509,7 +478,7 @@ blockquote {
 	background-size: cover;	
 	height: 1100px;
 	position: relative;
-	top: 150px
+	top: 80px;
 	width: 100%;
 }
 
@@ -520,7 +489,7 @@ blockquote {
 	margin: 0 auto;
 	padding: 20px;
 	position: relative;
-	top: 100px;
+	top: 60px;
 	width: 58%;
 }
 
@@ -531,7 +500,7 @@ blockquote {
 	margin: 0 auto;
 	padding: 0 20px;
 	position: relative;
-	top: 80px;
+	top: 40px;
 	width: 58%;
 }
 
