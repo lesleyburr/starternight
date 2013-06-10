@@ -63,6 +63,7 @@ body, p, a {
 }
 
 p {
+	padding-bottom: 20px;
 	line-height: 1.5em;
 }
 
@@ -93,7 +94,7 @@ a:hover, a:active {
 }
 
 ul, ol {
-	list-style-type: disc;
+	list-style-type: none;
 }
 
 ul li, ol li {
@@ -212,6 +213,7 @@ nav ul li {
 	background: url('../images/originalstripes.jpg') no-repeat;
 	background-size: cover;
 	height: 610px;
+	margin: 0 auto;
 	position: relative;
 	width: 100%;
 }
@@ -255,14 +257,20 @@ nav ul li {
   transform: skew(0deg, -16deg);
 }​
 
-/*.tagline {
-	font-family: vevey;
-	font-size: 1.9em;
-	letter-spacing: 0px;
+.tagline {
+	margin: 0 auto;
 	position: relative;
-	text-align: center;
 	top: -8px;
-}*/
+}
+
+#motto {
+	color: #ffff00;
+	font-family: vevey, helvetica, arial, sans-serif;
+	font-size: 3.8em;
+	letter-spacing: 8px;
+	text-align: center;
+	text-shadow: 3px 3px #000;
+}
 
 /*site summary/description*/
 
@@ -272,7 +280,6 @@ nav ul li {
 }
 
 .sitedescription {
-	border: 1px solid red;
 	margin: 0 auto;
 	position: relative;
 	text-align: center;
@@ -280,14 +287,15 @@ nav ul li {
 }
 
 .how {
-	border: 1px solid green;
+	border: 1px solid red;
 	clear: both;
 	float: left;
 	height: 500px;
 	margin: 0 auto;
+	padding: 10px;
 	position: relative;
-	top: 100px;
-	width: 50%;
+	top: 50px;
+	width: 80%;
 }
 
 .demophoto {
@@ -297,28 +305,23 @@ nav ul li {
     height: auto;
 }
 
-.stylists {
-	border: 1px solid red;
-	clear: both;
-	float: right;
+/*.stylists {
 	height: 500px;
 	margin: 0 auto;
 	position: relative;
 	top: 100px;
-	width: 50%;
+	width: 45%;
 }
 
-.stylingphoto {
-	border: 10px solid #ffff00;
-	float: right;
-	width: 25%;
+.expertpic {
+	width: 35%;
 	height: auto;
-}
+}*/
 
 /*main page*/
 
 .featuredlook {
-	background: url('../images/cropsweater.jpg') no-repeat;
+	background: url('../images/runway.jpg') no-repeat;
 	background-size: cover;
 	height: 500px;
 	margin: 0 auto;
@@ -405,6 +408,47 @@ nav ul li {
 	width: 80%;
 }
 
+.circlenumber {
+	background-color: #ffff00;
+	border-radius: 50px;
+	font-family: vevey, helvetica, arial, sans-serif;
+	font-size: 1.5em;
+	height: 30px;
+	text-align: center;
+	width: 30px;
+	position: relative;
+	line-height: 40px;
+}
+
+.circlenumber:hover {
+	background-color: #ffffff;
+}
+
+.one {
+	top: 145px;
+	left: 500px;
+}
+
+.two {
+	top: 190px;
+	left: 405px;
+}
+
+.three {
+	top: 210px;
+	left: 505px;
+}
+
+.four {
+	top: 425px;
+	left: 565px;
+}
+
+.five {
+	top: 480px;
+	left: 570px;
+}
+
 .fullinfo {
 	height: 500px;
 	margin: 0 auto;
@@ -415,7 +459,7 @@ nav ul li {
 
 .infocontainer {
 	float: left;
-	height: 400px;
+	height: 700px;
 	padding: 10px;
 	position: relative;
 	width: 60%
@@ -467,8 +511,16 @@ blockquote {
 	padding: 15px;
 	position: relative;
 	text-align: center;
-	top: -180px;
+	top: -190px;
 	width: 20%
+}
+
+.shop {
+	height: 500px;
+	margin: 0 auto;
+	position: relative;
+	top: 200px;
+	width: 80%;
 }
 
 /*Submit Page*/
@@ -476,7 +528,7 @@ blockquote {
 .submitpage {
 	background: url("../images/shoejump.jpg") no-repeat;
 	background-size: cover;	
-	height: 1100px;
+	height: 1200px;
 	position: relative;
 	top: 80px;
 	width: 100%;
@@ -496,7 +548,7 @@ blockquote {
 .form {
 	background: #fff;
 	opacity: 0.7;
-	height: 830px;
+	height: 920px;
 	margin: 0 auto;
 	padding: 0 20px;
 	position: relative;
