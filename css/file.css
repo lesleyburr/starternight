@@ -336,7 +336,7 @@ nav ul li {
 }
 
 .femalelook {
-	background: url('../images/bluecoat.jpg') no-repeat;
+	background: url('../images/fruity.jpg') no-repeat;
 	background-size: cover;
 	float: left;
 	height: 450px;
@@ -399,16 +399,15 @@ nav ul li {
 /*Female Look Full Story*/
 
 .fullpicture {
-	background: url('../images/bluecoat.jpg') no-repeat;
+	background: url('../images/fruity.jpg') no-repeat;
 	background-size: cover;
-	height: 700px;
-	margin: 0 auto;
+	height: 750px;
 	position: relative;
 	top: 80px;
-	width: 80%;
+	width: 40%;
 }
 
-.circlenumber {
+.circle {
 	background-color: #ffff00;
 	border-radius: 50px;
 	font-family: vevey, helvetica, arial, sans-serif;
@@ -420,63 +419,70 @@ nav ul li {
 	line-height: 40px;
 }
 
-.circlenumber:hover {
+.circle:hover {
 	background-color: #ffffff;
 }
 
-.one {
+#one {
 	top: 145px;
-	left: 500px;
+	left: 140px;
 }
 
-.two {
+#two {
 	top: 190px;
-	left: 405px;
+	left: 170px;
 }
 
-.three {
-	top: 210px;
-	left: 505px;
+#three {
+	top: 215px;
+	left: 195px;
 }
 
-.four {
-	top: 425px;
-	left: 565px;
+#four {
+	top: 345px;
+	left: 175px;
 }
 
-.five {
+#five {
 	top: 480px;
-	left: 570px;
+	left: 170px;
 }
 
-.fullinfo {
-	height: 500px;
+
+/* Outfit Sidebar */
+
+.outfitsidebar {
+	position: relative;
+	top: -740px;
+	right: 100px;
+	width: 50%
+}
+
+.outfitstats {
+	border: 3px solid #ffff00;
+	left: 500px;
 	margin: 0 auto;
-	position: relative;
-	top: 80px;
-	width: 80%;
-}
-
-.infocontainer {
-	float: left;
-	height: 700px;
-	padding: 10px;
-	position: relative;
-	width: 60%
+	padding: 15px;
+	position: absolute;
+	text-align: center;
+	top: 100px;
 }
 
 blockquote {
 	font-family: helvetica, arial, sans-serif;
-	font-size: 2em;
+	font-size: 1.5em;
 	font-style: italic;
 	line-height: 1.1em;
-	margin: 10px;
+	left: 750px;
+	position: absolute;
 	text-shadow: 2px 2px #ffff00;
+	top: 350px;
+	width: 400px;
 }
 
 /*Outfit Stats Pentagon*/
 
-.outfitpentagon {
+/*.outfitpentagon {
    border-bottom: 150px solid #ffff00;
    border-left: 75px solid transparent;
    border-right: 75px solid transparent;
@@ -501,18 +507,22 @@ blockquote {
    left: 33%;
    top: 30px;
    width: 0; 
+}*/
 
+.fullinfo {
+	height: 500px;
+	margin: 0 auto;
+	position: relative;
+	top: 80px;
+	width: 80%;
 }
 
-.outfitstats {
+.infocontainer {
 	float: left;
-	left: 40px;
-	margin-left: 45px;
-	padding: 15px;
+	height: 700px;
+	padding: 10px;
 	position: relative;
-	text-align: center;
-	top: -190px;
-	width: 20%
+	width: 60%
 }
 
 .shop {
