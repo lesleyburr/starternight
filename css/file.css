@@ -1,3 +1,36 @@
+/* *******************
+*
+* Table of Contents
+*
+* 1) Reset
+* 2) Clearfix
+* 3) Base Styles (body, links, fonts, etc.)
+* 4) Modules (footer, nav, header, etc.)
+* 5) Page Elements (main column, side bar, etc.)
+* 6) Section Specific Overrides (contact page/form, etc.)
+*
+******************* */
+
+/* *******************
+*
+* Color Guide
+*
+* Yellow: #ffff00
+*
+******************* */
+
+
+
+
+
+
+
+/* *******************
+*
+* 1) Reset
+*
+******************* */
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -50,7 +83,32 @@ table {
 
 
 
-/* Custom Styles */
+/* *******************
+*
+* 2) Clearfix
+*
+******************* */
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+
+
+
+
+
+
+/* *******************
+*
+* 3) Base Styles
+*
+******************* */
 
 body {
 	background: transparent;
@@ -59,7 +117,8 @@ body {
 body, p, a {
 	color: #000;
 	font-family: helvetica, arial, sans-serif;
-	font-size: 100%;
+	font-size: 100%; 
+	/*font-size: 62.5% = 10px (10/16 = .625 base level)*/
 }
 
 p {
@@ -67,7 +126,21 @@ p {
 	line-height: 1.5em;
 }
 
-h2, h3 {
+/*Logo*/
+
+h1 {
+	color: #000000;
+	float: left;
+	font-family: thiamine, helvetica, arial, sans-serif;
+	font-size: 4.5em;
+	letter-spacing: 10px;
+	padding: 0 20px;
+	position: relative;
+	top: 5px;
+	text-transform: uppercase;
+}
+
+h2, h3, h4, h5, h6 {
 	font-family: vevey, helvetica, arial, sans-serif;
 	margin: 0 auto;
 	padding: 10px 0;
@@ -101,8 +174,6 @@ ul li, ol li {
 	line-height: 1.7em;
 }
 
-
-
 /* Fonts */
 
 @font-face {
@@ -115,6 +186,21 @@ ul li, ol li {
 	src: url('../fonts/vevey.ttf');
 }
 
+
+
+
+
+
+
+
+
+
+/* *******************
+*
+* 4) Modules
+*
+******************* */
+
 /* Header */
 
 header {
@@ -125,20 +211,6 @@ header {
 			box-shadow: 0px 3px 3px 0px #999;
 	width: 100%;
 	z-index: 1000;
-}
-
-/*Logo*/
-
-h1 {
-	color: #000000;
-	float: left;
-	font-family: thiamine, helvetica, arial, sans-serif;
-	font-size: 4.5em;
-	letter-spacing: 10px;
-	padding: 0 20px;
-	position: relative;
-	top: 5px;
-	text-transform: uppercase;
 }
 
 /*Main Navigation*/
@@ -195,19 +267,7 @@ nav ul li {
 	top: 2px;
 }
 
-/* Clearfix */
-
-.clearfix:before,
-.clearfix:after {
-  content: "";
-  display: table;
-}
-.clearfix:after {
-  clear: both;
-}
-
-
-/*Intro Page*/
+/* Intro Page */
 
 .intro {
 	background: url('../images/originalstripes.jpg') no-repeat;
@@ -218,6 +278,7 @@ nav ul li {
 	width: 100%;
 }
 
+/*
 .chevron {
   position: relative;
   text-align: center;
@@ -229,7 +290,7 @@ nav ul li {
 }
 
 .chevron:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -242,8 +303,9 @@ nav ul li {
   -o-transform: skew(0deg, 16deg);
   transform: skew(0deg, 16deg);
 }
+
 .chevron:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -255,26 +317,61 @@ nav ul li {
   -ms-transform: skew(0deg, -16deg);
   -o-transform: skew(0deg, -16deg);
   transform: skew(0deg, -16deg);
-}​
+}​*/
 
-.tagline {
-	margin: 0 auto;
-	position: relative;
-	top: -8px;
+.chevron {
+        position: relative;
+        text-align: center;
+        top: 500px;
+        padding: 1px;
+        margin-bottom: 6px;
+        height: 250px;
+        width: 100%;
 }
 
-#motto {
-	color: #ffff00;
-	font-family: vevey, helvetica, arial, sans-serif;
-	font-size: 3.8em;
-	letter-spacing: 8px;
-	text-align: center;
-	text-shadow: 3px 3px #000;
+.chevron:before, .chevron:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 50%;
+        background: #fff;
+}
+
+.chevron:before {
+        left: 0;
+        -webkit-transform: skew(0deg, 16deg);
+                 -moz-transform: skew(0deg, 16deg);
+                  -ms-transform: skew(0deg, 16deg);
+                         -o-transform: skew(0deg, 16deg);
+                                 -transform: skew(0deg, 16deg);
+}
+
+.chevron:after {
+        right: 0;
+        -webkit-transform: skew(0deg, -16deg);
+                 -moz-transform: skew(0deg, -16deg);
+                  -ms-transform: skew(0deg, -16deg);
+                         -o-transform: skew(0deg, -16deg);
+                                 -transform: skew(0deg, -16deg);
+}
+
+.tagline {
+        margin: 0 auto;
+        position: relative;
+        top: -8px;
+        color: #ffff00;
+        font-family: vevey, helvetica, arial, sans-serif;
+        font-size: 3.8em;
+        letter-spacing: 8px;
+        text-align: center;
+        text-shadow: 3px 3px #000;
 }
 
 /*site summary/description*/
 
 .site-explanation {
+	height: 600px;
 	margin: 0 auto;
 	width: 100%
 }
@@ -286,24 +383,12 @@ nav ul li {
 	width: 70%;
 }
 
-.how {
-	border: 1px solid red;
-	clear: both;
-	float: left;
-	height: 500px;
-	margin: 0 auto;
-	padding: 10px;
-	position: relative;
-	top: 50px;
-	width: 80%;
-}
-
-.demophoto {
+/*.demophoto {
 	border: 10px solid #ffff00;
 	float: right;
     width: 25%;
     height: auto;
-}
+}*/
 
 /*.stylists {
 	height: 500px;
@@ -452,15 +537,17 @@ nav ul li {
 /* Outfit Sidebar */
 
 .outfitsidebar {
+	border: 1px solid red;
+	height: 500px;
 	position: relative;
-	top: -740px;
-	right: 100px;
+	top: -650px;
+	left: 450px;
 	width: 50%
 }
 
 .outfitstats {
 	border: 3px solid #ffff00;
-	left: 500px;
+	left: 300px;
 	margin: 0 auto;
 	padding: 15px;
 	position: absolute;
@@ -473,7 +560,7 @@ blockquote {
 	font-size: 1.5em;
 	font-style: italic;
 	line-height: 1.1em;
-	left: 750px;
+	left: 100px;
 	position: absolute;
 	text-shadow: 2px 2px #ffff00;
 	top: 350px;
@@ -529,7 +616,6 @@ blockquote {
 	height: 500px;
 	margin: 0 auto;
 	position: relative;
-	top: 200px;
 	width: 80%;
 }
 
