@@ -362,7 +362,7 @@ nav ul li {
         top: -8px;
         color: #ffff00;
         font-family: vevey, helvetica, arial, sans-serif;
-        font-size: 3.8em;
+        font-size: 7em;
         letter-spacing: 8px;
         text-align: center;
         text-shadow: 3px 3px #000;
@@ -371,7 +371,7 @@ nav ul li {
 /*site summary/description*/
 
 .site-explanation {
-	height: 600px;
+	height: 480px;
 	margin: 0 auto;
 	width: 100%
 }
@@ -383,25 +383,6 @@ nav ul li {
 	width: 70%;
 }
 
-/*.demophoto {
-	border: 10px solid #ffff00;
-	float: right;
-    width: 25%;
-    height: auto;
-}*/
-
-/*.stylists {
-	height: 500px;
-	margin: 0 auto;
-	position: relative;
-	top: 100px;
-	width: 45%;
-}
-
-.expertpic {
-	width: 35%;
-	height: auto;
-}*/
 
 /*main page*/
 
@@ -537,7 +518,6 @@ nav ul li {
 /* Outfit Sidebar */
 
 .outfitsidebar {
-	border: 1px solid red;
 	height: 500px;
 	position: relative;
 	top: -650px;
@@ -564,7 +544,7 @@ blockquote {
 	position: absolute;
 	text-shadow: 2px 2px #ffff00;
 	top: 350px;
-	width: 400px;
+	width: 700px;
 }
 
 /*Outfit Stats Pentagon*/
@@ -719,6 +699,44 @@ textarea {
 	position: relative;
 	text-shadow: 2px 2px #666666;
 	top: 2px;
+}
+
+/*
+Email signup
+*/
+
+.emailcapture {
+	position: relative;
+	padding: 20px;
+	height: 250px;
+}
+
+.form-email {
+	background: #fff000;
+	height: 150px;
+	margin: 0 auto;
+	padding: 20px;
+	position: relative;
+	text-align: center;
+	width: 30%;
+}
+
+.label-email {
+	color: #000000;
+	display: block;
+	font-family: vevey, helvetica, arial, sans-serif;
+	font-size: 2em;
+	font-weight: bold;
+	margin: 10px 0 10px 0;
+}
+
+#emailaddress {
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.1), 0 1px 0 #fff;
+	color: #555;
+	display: block;
+	font-family: helvetica, arial, sans-serif;
+	font-size: 1.5em;
+	padding: 10px;
 }
 
 /* Footer */
