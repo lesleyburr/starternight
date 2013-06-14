@@ -278,46 +278,6 @@ nav ul li {
 	width: 100%;
 }
 
-/*
-.chevron {
-  position: relative;
-  text-align: center;
-  top: 500px;
-  padding: 1px;
-  margin-bottom: 6px;
-  height: 250px;
-  width: 100%;
-}
-
-.chevron:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 50%;
-  background: #ffffff;
-  -webkit-transform: skew(0deg, 16deg);
-  -moz-transform: skew(0deg, 16deg);
-  -ms-transform: skew(0deg, 16deg);
-  -o-transform: skew(0deg, 16deg);
-  transform: skew(0deg, 16deg);
-}
-
-.chevron:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: 50%;
-  background: #ffffff;
-  -webkit-transform: skew(0deg, -16deg);
-  -moz-transform: skew(0deg, -16deg);
-  -ms-transform: skew(0deg, -16deg);
-  -o-transform: skew(0deg, -16deg);
-  transform: skew(0deg, -16deg);
-}​*/
 
 .chevron {
         position: relative;
@@ -371,7 +331,7 @@ nav ul li {
 /*site summary/description*/
 
 .site-explanation {
-	height: 480px;
+	height: 460px;
 	margin: 0 auto;
 	width: 100%
 }
@@ -380,9 +340,19 @@ nav ul li {
 	margin: 0 auto;
 	position: relative;
 	text-align: center;
-	width: 70%;
+	width: 39.5%;
 }
 
+.marketing {
+	font-size: 2.2em;
+	letter-spacing: 4px;
+	text-shadow: 3px 2px #ffff00;
+}
+
+.marketingtext {
+	font-size: 1.2em;
+	text-align: justify;
+}
 
 /*main page*/
 
@@ -708,14 +678,14 @@ Email signup
 .emailcapture {
 	position: relative;
 	padding: 20px;
-	height: 250px;
+	height: 300px;
 }
 
 .form-email {
-	background: #fff000;
-	height: 150px;
+	border: 8px solid #fff000;
+	height: 200px;
 	margin: 0 auto;
-	padding: 20px;
+	padding: 20px 20px 20px 20px;
 	position: relative;
 	text-align: center;
 	width: 30%;
@@ -725,18 +695,36 @@ Email signup
 	color: #000000;
 	display: block;
 	font-family: vevey, helvetica, arial, sans-serif;
-	font-size: 2em;
+	font-size: 1.7em;
 	font-weight: bold;
 	margin: 10px 0 10px 0;
+	letter-spacing: 3px;
 }
 
-#emailaddress {
+#emailaddresscapture {
 	box-shadow: inset 0 1px 1px rgba(0,0,0,0.1), 0 1px 0 #fff;
 	color: #555;
 	display: block;
 	font-family: helvetica, arial, sans-serif;
-	font-size: 1.5em;
+	font-size: 1.1em;
 	padding: 10px;
+}
+
+
+
+
+
+
+/*
+About Page
+*/
+
+.letter {
+	height: 260px;
+	margin: 0 auto;
+	position: relative;
+	top: 100px;
+	width: 50%;
 }
 
 /* Footer */
